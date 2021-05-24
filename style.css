@@ -1,65 +1,89 @@
 /*------------Tady piš svoje stylování --------------*/
 
-@media (min-width: 360px) and (max-width: 575px) {
+.date {
+  position: relative;
+}
+.date__busy {
+  position: absolute;
+  top: 10px;
+}
+
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.newsletter__article {
+  display: flex;
+}
+
+/* mobile */
+@media screen {
   .social-media {
     width: 40%;
   }
   .photos {
     overflow-x: auto;
   }
-  .date {
-    position: relative;
-    display: flex;
-  }
-  .date__busy {
-    position: absolute;
-    top: 10px;
-    justify-content: space-between;
-  }
-  .dashboard {
-    width: 100%;
-  }
   .newsletter__image {
     display: none;
+  }
+  .card--md,
+  .card--sm {
+    width: 100%;
   }
 }
 
 /* tablet */
-@media screen and (max-width: 991px) {
+@media screen and (min-width: 576px) {
   .social-media {
     width: 30%;
   }
-  .photos {
-    overflow-x: auto;
-  }
-
-  .dashboard {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .card {
+  .card--md,
+  .card--sm {
     width: 49%;
   }
-  .card.card--lg,
-  .card.card--wide {
+  .card--lg,
+  .card--wide {
     width: 100%;
   }
-  .date {
-    position: relative;
-    display: flex;
+  .newsletter__image {
+    display: inline;
   }
-  .date__busy {
-    position: absolute;
-    top: 10px;
+}
+
+/* laptop */
+
+@media screen and (min-width: 992px) {
+  .social-media {
+    width: 20%;
+  }
+  .newsletter {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
-  .news {
-    display: flex;
+
+  .newsletter__article {
+    width: 49%;
   }
-  .card.card--scroll {
-    flex-grow: 2;
+}
+
+/* desktop */
+@media screen and (min-width: 1200px) {
+  .social-media {
+    width: 15%;
   }
   .newsletter__article {
-    display: flex;
+    width: 32%;
+  }
+  .card--wide {
+    order: -1;
+  }
+  .card--md,
+  .card--wide {
+    width: 32%;
   }
 }
