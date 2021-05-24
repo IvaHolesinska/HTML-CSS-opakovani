@@ -9,15 +9,57 @@
   }
   .date {
     position: relative;
+    display: flex;
   }
   .date__busy {
     position: absolute;
     top: 10px;
+    justify-content: space-between;
   }
   .dashboard {
     width: 100%;
   }
   .newsletter__image {
     display: none;
+  }
+}
+
+/* tablet */
+@media screen and (max-width: 991px) {
+  .social-media {
+    width: 30%;
+  }
+  .photos {
+    overflow-x: auto;
+  }
+
+  .dashboard {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 49%;
+  }
+  .card.card--lg,
+  .card.card--wide {
+    width: 100%;
+  }
+  .date {
+    position: relative;
+    display: flex;
+  }
+  .date__busy {
+    position: absolute;
+    top: 10px;
+    justify-content: space-between;
+  }
+  .news {
+    display: flex;
+  }
+  .card.card--scroll {
+    flex-grow: 2;
+  }
+  .newsletter__article {
+    display: flex;
   }
 }
