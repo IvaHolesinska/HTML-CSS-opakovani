@@ -30,7 +30,8 @@
     display: none;
   }
   .card--md,
-  .card--sm {
+  .card--sm,
+  .card--wide {
     width: 100%;
   }
 }
@@ -44,8 +45,7 @@
   .card--sm {
     width: 49%;
   }
-  .card--lg,
-  .card--wide {
+  .card--lg {
     width: 100%;
   }
   .newsletter__image {
